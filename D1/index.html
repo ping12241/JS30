@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum kit</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/js.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="box" data-key="65" onclick="board(65)">
+                <div class="box_title">A</div>
+                <span>CLAP</span>
+                <audio data-key="65" onclick="board(65)" src="music/clap.wav"></audio>
+            </div>
+            <div class="box" data-key="83" onclick="board(83)">
+                <div class="box_title">S</div>
+                <span>HIHAT</span>
+                <audio data-key="83" onclick="board(83)" src="music/hihat.wav"></audio>
+            </div>
+            <div class="box" data-key="68" onclick="board(68)">
+                <div class="box_title">D</div>
+                <span>KICK</span>
+                <audio data-key="68" onclick="board(68)" src="music/kick.wav"></audio>
+            </div>
+            <div class="box" data-key="70" onclick="board(70)">
+                <div class="box_title">F</div>
+                <span>OPENHAT</span>
+                <audio data-key="70" onclick="board(70)" src="music/openhat.wav"></audio>
+            </div>
+            <div class="box" data-key="71" onclick="board(71)">
+                <div class="box_title">G</div>
+                <span>BOOM</span>
+                <audio data-key="71" onclick="board(71)" src="music/boom.wav"></audio>
+            </div>
+            <div class="box" data-key="72" onclick="board(72)">
+                <div class="box_title">H</div>
+                <span>RIDE</span>
+                <audio data-key="72" onclick="board(72)" src="music/ride.wav"></audio>
+            </div>
+            <div class="box" data-key="74" onclick="board(74)">
+                <div class="box_title">J</div>
+                <span>SNARE</span>
+                <audio data-key="74" onclick="board(74)" src="music/snare.wav"></audio>
+            </div>
+            <div class="box" data-key="75" onclick="board(75)">
+                <div class="box_title">K</div>
+                <span>TOM</span>
+                <audio data-key="75" onclick="board(75)" src="music/tom.wav"></audio>
+            </div>
+            <div class="box" data-key="76" onclick="board(76)">
+                <div class="box_title">L</div>
+                <span>TINK</span>
+                <audio data-key="76" onclick="board(76)" src="music/tink.wav"></audio>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
