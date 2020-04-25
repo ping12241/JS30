@@ -1,0 +1,62 @@
+@mixin flex ($direction: row, $align: flex-start, $justify: flex-start) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Microsoft JhengHei;
+}
+
+body {
+    background-color: #223146;
+}
+
+.wrapper {
+    width: 80%;
+    min-width: 1000px;
+    padding-top: 30px;
+    margin: 0 auto;
+    @include flex(column, center, center);
+}
+
+.wrapper h1 {
+    font-size: 66px;
+    color: white;
+}
+
+.item {
+    width: 800px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    @include flex(row, center, space-around);
+}
+
+.item label {
+    font-size: 40px;
+    color: white;
+}
+
+.item input {
+    width: 100px;
+}
+
+:root {
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur)); //濾鏡使用
+}
+
+h1 a { 
+    color: var(--base);
+}
